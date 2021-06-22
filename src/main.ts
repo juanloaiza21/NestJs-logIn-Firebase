@@ -18,7 +18,7 @@ async function bootstrap() {
     } as Partial<admin.ServiceAccount>),
     databaseURL: process.env.FIREBASE_DATABASE_URL
   });
-  console.log("Conetado a firebase");
   await app.listen(3000);
+  console.log("Conectado a firebase");
 }
 bootstrap();
